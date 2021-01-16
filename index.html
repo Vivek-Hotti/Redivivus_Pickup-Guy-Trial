@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Pickup Representative Form</title>
+  </head>
+  <body>
+    <h1>Pickup Representative Notes - REDIVUVS</h1>
+    <p>Only for internal use and circulation</p>
+    <form class="pickup-guy-form">
+      <h2>Personal Details</h2>
+      <label for="">Customer Name</label><br />
+      <input class="name" type="text" placeholder="Your Name" /><br />
+      <label for="">Customer Email</label><br/>
+      <input class="email" type="email" placeholder="Your Email" /><br />
+      <label for="">Customer Phone Number</label><br />
+      <input class="phone" type="text" placeholder="Your Phone number" /><br />
+      
+      <h2>Pickup Details</h2>
+      <label for="">Date when picked up</label><br />
+      <input class="date_pickup" type="date"/><br />
+      
+      <h3>Recyclable Waste Details</h3>
+      <label for="">Combination of waste collected: </label><br />
+      <select name="combination" input class="combination">
+        <option value="" disabled selected>Select the combination</option>
+        <option value="Only_Paper">Only Paper</option>
+        <option value="Only_Plastic">Only Plastic</option>
+        <option value="Only_Metal">Only Metal</option>
+        <option value="Paper+Plastic">Both Paper and Plastic</option>
+        <option value="Paper+Metal">Both Paper and Metal</option>
+        <option value="Plastic+Metal">Both Plastic and Metal</option>
+        <option value="Plastic+Metal+Paper">All:- Plastic, Metal and Paper</option>        
+      </select>
+
+      <label for="">Total Quantity of Waste collected (in kg): </label><br />
+      <input class="total_quantity" type="text" placeholder="in kilograms" /><br />
+      <label for="">Total Reimbursement given to customer: </label><br />
+      <input class="total_reimbursement" type="text" placeholder="in rupees" /><br />
+      <button type="submit">Submit</button>
+      
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
